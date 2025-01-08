@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href="/2048.css">
+</head>
+<body>
+    <div id="wholegame">
+        <div id="set" class="s">
+
+            <div id="titlebox" class="s">
+                <h2 id="title">2048</h2>
+            </div>
+
+            <div id="timebox" class="s">
+                <b>time:</b>
+                <b id="timer">0</b>
+            </div>
+
+            <div id="scorebox" class="s">
+                <b>score:</b>
+                <b id="score">0</b>
+            </div>
+            <div id="bestscorebox" class="s">
+                <b>best score:</b>
+                <b id="bestscore">0</b>
+            </div>
+            <div>
+                <button type="button" onclick="newGame()" id="button">
+                    <b style="font-size: 30px;">重置</b>
+                </button>
+                <button type="button" style="position:relative;" onclick="swich()"><b>切換</b></button>
+            </div>
+
+        </div>
+
+
+
+        <div id="gamebox">
+            <div id="game">
+                <div id="gridbox"></div>
+                <div id="tilebox"></div>
+            </div>
+        </div>
+
+
+        <div>
+            <button id="left" class="move" type="button" onclick="left()"><b>左</b></button>
+            <button id="right" class="move" type="button" onclick="right()"><b>右</b></button>
+            <button id="up" class="move" type="button" onclick="up()"><b>上</b></button>
+            <button id="down" class="move" type="button" onclick="down()"><b>下</b></button>
+        </div>
+    </div>
+    <script src="/2048.js"></script>
+</body>
+</html> 
